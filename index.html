@@ -11,24 +11,51 @@
     <link rel="stylesheet" href="CSS/main.css" />
   </head>
   <body>
-    <header>
+    <div class="header">
       <div class="container">
         <div class="head">
           <div class="header-title">
             <h1>Калькулятор рейтинга эффективности</h1>
           </div>
 
-          <div class="header-form">
-            <form id="search" onsubmit="return searchSubmit();">
+          <div class="header-form" id="header-form">
+            <form id="search" class="search">
               <small id="text-help" class="text-help">Имя игрока:</small>
-              <input autocomplete="off" spellcheck="false" autocorrect="off" id="select_what" type="search" name="name" />
-              <a href="#" class="button" onclick="searchSubmit(); return false;"><img src="img/search.svg" /></a>
+
+              <input autocomplete="off" spellcheck="false" autocorrect="off" id="select_what" type="search" name="name" placeholder="" />
+
+              <a href="#" class="button" onclick="searchSubmit(); return false;"> <img src="img/search.svg" /></a>
             </form>
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
-    <script src="JS/index.js"></script>
+    <div class="main">
+      <div class="container">
+        <div class="main-result">
+          <span class="left-menu">
+            <div class="battle-title"><span class="rating_word">Количество</span>&nbsp;боёв</div>
+            <div class="reef-title"><span class="rating_word">Рейтинг</span>&nbsp;РЭ:</div>
+            <div class="wn8-title"><span class="rating_word">Рейтинг</span>&nbsp;WN8:</div>
+            <div class="wg-title"><span class="rating_word">Рейтинг</span>&nbsp;WG:</div>
+            <div class="win-title"><span class="rating_word">Процент</span>&nbsp;побед:</div>
+            <div class="middle-damage-title"><span class="rating_word">Средний</span>&nbsp;урон:</div>
+          </span>
+          <span class="center-menu">
+            <div id="BATTLE_PARAMS" class="BATTLE_PARAMS"><span>Значение1</span></div>
+            <div id="REEF_PARAMS" class="REEF_PARAMS"><span>Значение2</span></div>
+            <div id="WN8_PARAMS" class="WN8_PARAMS"><span>Значение3</span></div>
+            <div id="WG_PARAMS" class="WG_PARAMS"><span>Значение4</span></div>
+            <div id="WIN_PARAMS" class="WIN_PARAMS"><span>Значение5</span></div>
+            <div id="MIDDLE-DAMAGE_PARAMS" class="MIDDLE-DAMAGE_PARAMS"><span>Значение6</span></div>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="errorBlock" id="errorBlock"></div> -->
+
+    <script type="module" src="JS/index.js"></script>
   </body>
 </html>

@@ -8,6 +8,10 @@ body {
     box-sizing: border-box;
 }
 
+h1 {
+    color: rgb(37, 39, 32)
+}
+
 .text-help {
     font-size: 15px;
     margin-right: 6px;
@@ -16,12 +20,13 @@ body {
 /* header */
 
 .container {
-    margin: 0 255px;
+    margin: 0 55px;
     padding-bottom: 10px;
 }
 
 .head {
     text-align: center;
+    margin-top: 30px;
 }
 
 .head.main {
@@ -35,6 +40,11 @@ body {
 .header-title {
     text-align: left;
 }
+
+.header-form {
+    margin-top: 60px;
+}
+
 
 .form-nick {
     border: 1px solid #cccccc;
@@ -53,10 +63,10 @@ img {
 }
 
 .button {
-    border: 1px none 
+    border: 1px none;
     padding: 0 15px;
     text-decoration: none;
-    width: 40px
+    width: 40px;
     color: black;
     transition: all .5s;
     line-height: 38px;
@@ -89,3 +99,29 @@ a {
 
    
 /* header */
+
+/* main */
+
+.main-result {
+    margin-top: 100px;
+    display: flex;
+    
+}
+
+.battle-title, .reef-title, .wn8-title, .wg-title, .win-title, .middle-damage-title{
+   margin-bottom: 10px;
+}
+
+.center-menu {
+    margin-left: 100px;
+}
+
+.BATTLE_PARAMS, .REEF_PARAMS, .WN8_PARAMS, .WG_PARAMS, .WIN_PARAMS, .MIDDLE-DAMAGE_PARAMS {
+    margin-bottom: 10px;
+}
+
+/* main */
+
+/* error */
+
+/* error */
