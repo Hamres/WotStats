@@ -5,7 +5,7 @@ const selectWhat = document.querySelector('#select_what')
 const btn = document.querySelector('#button')
 const errorBlock = document.querySelector('#errorBlock')
 
-// прослушка на кнопку
+//прослушка на кнопку
 form.addEventListener('submit', (event) => {
   event.preventDefault()
 

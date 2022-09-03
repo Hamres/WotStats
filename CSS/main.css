@@ -12,11 +12,6 @@ h1 {
     color: rgb(37, 39, 32)
 }
 
-.text-help {
-    font-size: 15px;
-    margin-right: 6px;
-}
-
 /* header */
 
 .container {
@@ -27,6 +22,18 @@ h1 {
 .head {
     text-align: center;
     margin-top: 30px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.text-help {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding-right: 5px;
 }
 
 .head.main {
@@ -45,37 +52,18 @@ h1 {
     margin-top: 60px;
 }
 
-
-.form-nick {
-    border: 1px solid #cccccc;
-    line-height: 38px;
-    padding: 0 15px;
-    width: 11%;
-    outline: none;
-    border-right: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-}
-
-img {
-    width: 35px;
-    margin-bottom: -13px;
-}
-
-.button {
-    border: 1px none;
-    padding: 0 15px;
-    text-decoration: none;
-    width: 40px;
-    color: black;
+.btn {
+    padding: 0 10px;
     transition: all .5s;
-    line-height: 38px;
-    display: inline-block;
-    background: transparent;
-    white-space: nowrap;
-    flex-direction: row;
     align-items: center;
+    margin-left: 5px;
     border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:rgba(165, 165, 164, 0.836)
 }
 
 input[type=search] {
@@ -89,12 +77,9 @@ input[type=search] {
     
 }
 
-a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+.btn {
+    font-size: 25px;
+    
 }
 
    
@@ -123,5 +108,6 @@ a {
 /* main */
 
 /* error */
+
 
 /* error */

@@ -11,10 +11,12 @@ export const getStatsData = async (nickname) => {
 
     const dataId = await responseId.json()
 
+    const battle = (document.querySelector('#BATTLE_PARAMS').textContent = dataId.data[accountId].statistics.all.battles)
+
+    const damage = (document.querySelector('#MIDDLE-DAMAGE_PARAMS').textContent = dataId.data[accountId].statistics.all.damage_dealt / battle)
+
     console.log(dataId)
   } catch (error) {
     console.error(error)
   }
 }
-
-// const battle = (document.querySelector('#BATTLE_PARAMS').textContent = data.data['96151175'].statistics.all.battles)
