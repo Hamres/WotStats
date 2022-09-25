@@ -4,7 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    background-color: #bebebd;
+    background-color: #888888;
     box-sizing: border-box;
 }
 
@@ -28,6 +28,23 @@ h1 {
     display: flex;
     justify-content: center;
 }
+
+.red {
+    color:#f23030;
+}
+.orange {
+    color:#ccc636;
+}
+.green {
+    color:#5ca61c;
+}
+.blue {
+    color:#3bc8e0;
+}
+.purple {
+    color:#cc5eff;
+}
+
 
 .text-help {
     display: flex;
@@ -104,6 +121,7 @@ input[type=search] {
 .BATTLE_PARAMS, .REEF_PARAMS, .WN8_PARAMS, .WG_PARAMS, .WIN_PARAMS, .MIDDLE-DAMAGE_PARAMS {
     margin-bottom: 10px;
 }
+
 
 /* main */
 
