@@ -16,16 +16,6 @@ export const getStatsData = async (nickname) => {
 
     const dataId = await responseId.json()
 
-    // технка на аккаунте
-
-    // const tanks = await fetch(`https://api.worldoftanks.ru/wot/account/tanks/?application_id=092ce98e1d0e4584d8c87eb08d4b529a&account_id=${accountId}`)
-
-    // const tanksData = await tanks.json()
-
-    // console.log(tanksData)
-
-    //кол-во боев
-
     const battle = (document.querySelector('#BATTLE_PARAMS').textContent = dataId.data[accountId].statistics.all.battles)
 
     //ср. урон
@@ -154,7 +144,13 @@ export const getStatsData = async (nickname) => {
     }
 
     getColorDamage()
+    if (errorBlock.classList.length > 1) {
+      errorBlock.classList.remove(errorBlock.classList.item(1))
+    }
   } catch (error) {
+    let showError = 'show-error'
+    errorBlock.classList.add(showError)
+
     console.error(error)
   }
 }

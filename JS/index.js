@@ -33,7 +33,6 @@ form.addEventListener('submit', (event) => {
 
   const whatText = selectWhat.value
 })
-
 form.addEventListener('submit', async () => {
   try {
     const statistics = await getStatsData(selectWhat.value)
@@ -41,7 +40,3 @@ form.addEventListener('submit', async () => {
     console.error(error)
   }
 })
-
-const app = async () => {
-  const nick = await getStatsData()
-}
