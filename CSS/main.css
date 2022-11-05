@@ -95,7 +95,7 @@ input[type=search] {
     border: 1px solid #cccccc;
     line-height: 38px;
     padding: 0 15px;
-    width: 15%;
+    width: 200px;
     outline: none;
     border-right: 0;
     border-radius: 5px;
@@ -130,7 +130,31 @@ input[type=search] {
     margin-bottom: 10px;
 }
 
-
+@media (max-width: 500px) {
+    .search {
+        display: block;
+        
+    }
+    .text-help {
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    .select_what {
+        display: flex;
+        width: 50%;
+        margin: auto;
+        
+    }
+    .btn {
+        display: flex;
+        margin: auto;
+        margin-top: 5px;
+        
+    }
+    .WIN_PARAMS {
+        white-space: nowrap;
+    }
+}
 /* main */
 
 /* error */
